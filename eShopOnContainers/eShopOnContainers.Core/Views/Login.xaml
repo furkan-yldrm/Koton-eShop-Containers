@@ -4,9 +4,14 @@
              x:Class="eShopOnContainers.Core.Views.Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image Source="facebook.png" Margin="0,40,0,0" ></Image>
+            <Entry Placeholder="EPOSTA ADRESİ" Margin="10,40,10,0"></Entry>
+            <Entry Placeholder="ŞİFRE" Margin="10,0,10,0" IsPassword="true"></Entry>
+            <Label Text="Şifremi Unuttum" TextDecorations="Underline" FontAttributes="Bold" FontSize="Medium" Margin="240,0,0,0"></Label>
+            <Button Text="GİRİŞ YAP" Margin="10,40,10,10" BackgroundColor="Black" FontSize="Large"></Button>
+            <Label Text="veya" FontAttributes="Bold" FontSize="Medium" Margin="180,50,50,50"></Label>
+            <Label Text="Üye değil misiniz?" FontAttributes="Bold" FontSize="Medium" Margin="130,0,0,20"></Label>
+            <Button Text="KAYIT OL" TextColor="Black" Margin="10,0,10,200" BackgroundColor="White" BorderWidth="1" BorderColor="Black" FontSize="Large"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
