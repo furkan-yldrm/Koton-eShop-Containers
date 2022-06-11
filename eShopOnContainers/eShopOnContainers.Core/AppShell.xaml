@@ -31,9 +31,7 @@
     </FlyoutItem>
 
     <TabBar Route="Main">
-        <ShellContent Title="Anasayfa" Route="Catalog" Icon="home.png" ContentTemplate="{DataTemplate views:HomePage}" />
-        <ShellContent Title="Kategoriler" Route="Profile" Icon="search.png" ContentTemplate="{DataTemplate views:Categories}" />
-        <ShellContent Title="Sepet" Route="Catalog" Icon="bag.png" ContentTemplate="{DataTemplate views:Bag}" />
+        <ShellContent Title="ANASAYFA" Route="HomePage" Icon="home.png" ContentTemplate="{DataTemplate views:HomePage}"/>
         <ShellContent Title="CATALOG" Route="Catalog" Icon="{StaticResource CatalogIconImageSource}" ContentTemplate="{DataTemplate views:CatalogView}" />
         <ShellContent Title="Profil" Route="Profile" Icon="{StaticResource ProfileIconImageSource}" ContentTemplate="{DataTemplate views:ProfileView}" />
     </TabBar>

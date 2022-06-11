@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.HomePage">
+             x:Class="eShopOnContainers.Core.Views.HomePage"
+             Title="ANASAYFA">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <ImageButton Source="man.png" />
+                    <ImageButton Source="woman.png"    />
+                <ImageButton Source="kids.png"/>
+                <ImageButton Source="man2.png" />
+                    <ImageButton Source="woman2.png"/>
+                <ImageButton Source="kids2.png" />
+            </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
