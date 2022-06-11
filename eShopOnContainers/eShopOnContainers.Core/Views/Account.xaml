@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="HESABIM"
+             x:Class="eShopOnContainers.Core.Views.Account">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Orientation="Vertical" Spacing="20">
+                    <Label Text="HESABIM" FontSize="Medium" Margin="5" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Start" VerticalOptions="Start" />
+                    <Button BackgroundColor="LightGray" Text="Giriş Yap" TextColor="Black" TextTransform="None" Margin="5" Clicked="Button_Giris"/>
+                    <Button BackgroundColor="LightGray" Text="Kayıt Ol" TextColor="Black" TextTransform="None" Margin="5" Clicked="Button_Kayit"/>
+                    <Label Text="YARDIM" TextColor="Black" Margin="5" FontSize="Medium" FontAttributes="Bold" />
+                    <Label Text="Sipariş Takibi" TextColor="Black" Margin="5" FontSize="Medium" FontAttributes="Bold" />
+                    <Label Text="Siparişinizin durumunu kontrol etmek için butona basabilirsiniz." TextColor="Black" Margin="5" FontSize="Small" />
+                    <Button BackgroundColor="LightGray" Text="Sipariş Takibi"  TextColor="Black" TextTransform="None" Margin="5"/>
+                    <Label Text="İletişim Bilgilerimiz" TextColor="Black" Margin="5" FontSize="Medium" FontAttributes="Bold" />
+                    <Label Text="Bizimle iletişime geçmek için butona basabilirsiniz." TextColor="Black" Margin="5" FontSize="Small" />
+                    <Button BackgroundColor="LightGray" Text="İletişim" TextColor="Black" TextTransform="None" Margin="5"/>
+                    <Button BackgroundColor="LightGray" Text="Mağaza Bul" TextColor="Black" TextTransform="None" Margin="5"/>
+                    <Button BackgroundColor="LightGray" Text="Sık Sorulan Sorular" TextColor="Black" TextTransform="None" Margin="5"/>
+                    <Label Text="AYARLAR" TextColor="Black" Margin="5" FontSize="Medium" FontAttributes="Bold" />
+                    <Button BackgroundColor="LightGray" Text="Teslimat Ülkesi" TextColor="Black" TextTransform="None" Margin="5"/>
+                    <Button BackgroundColor="LightGray" Text="Dil Ayarları" TextColor="Black" TextTransform="None" Margin="5"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

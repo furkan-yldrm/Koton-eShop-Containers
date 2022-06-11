@@ -180,7 +180,8 @@
                 Grid.Row="3"
                 Margin="24">
                 <Label
-                  Text="User name or email"
+                  Text="Kullanıcı adı"
+                    TextColor="Black"
                   Style="{StaticResource HeaderLabelStyle}" />
                 <Entry Text="{Binding UserName.Value, Mode=TwoWay}">
 					<Entry.Style>
@@ -207,7 +208,8 @@
 					Text="{Binding UserName.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
 					Style="{StaticResource ValidationErrorLabelStyle}" />
                 <Label
-                  Text="Password"
+                  Text="Şifre"
+                    TextColor="Black"
                   Style="{StaticResource HeaderLabelStyle}"/>
                 <Entry
                   IsPassword="True"
@@ -240,18 +242,18 @@
                    HorizontalOptions="Center"
                    Grid.Row="2" >
                 <Image
-                    Source="eshop_logo.png"
+                    Source="koton_logo.png"
                     Aspect="AspectFit" />
             </Frame>
             <!-- LOGIN BUTTON -->
             <Grid
-                BackgroundColor="{StaticResource LightGreenColor}"
+                BackgroundColor="{StaticResource BlackColor}"
                 Grid.Row="4"
                 Padding="0"
                 ColumnSpacing="0"
                 RowSpacing="0">
                 <Label
-                  Text="[ LOGIN ]"
+                  Text="GİRİŞ YAP"
                   Style="{StaticResource LoginButtonStyle}"/>
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer
