@@ -54,6 +54,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Xamarin.Firebase.Analytics">
+      <Version>119.0.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Auth">
+      <Version>121.0.1.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Common">
+      <Version>120.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Firestore">
+      <Version>123.0.3.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2478" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="PCLCrypto" Version="2.0.147" />
@@ -75,10 +87,13 @@
     <Compile Include="Effects\BaseContainerEffect.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
     <Compile Include="Extensions\LocationExtensions.cs" />
+    <Compile Include="ServiceListeners\OnCompleteListener.cs" />
+    <Compile Include="Services\AccountService.cs" />
     <Compile Include="Services\ITheme.cs" />
     <Compile Include="Services\ThemeService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="google-services.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\drawable-xxhdpi\switch_off.png" />

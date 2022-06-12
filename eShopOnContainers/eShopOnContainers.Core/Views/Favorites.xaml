@@ -4,7 +4,7 @@
              x:Class="eShopOnContainers.Core.Views.Favorites">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="FAVORİLERİNİZ BOŞ!!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
