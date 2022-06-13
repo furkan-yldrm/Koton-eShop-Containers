@@ -1,17 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="eShopOnContainers.Core.Views.Login">
+             xmlns:vm="clr-namespace:eShopOnContainers.Core.ViewModels"
+             x:Class="eShopOnContainers.Core.Views.Login"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:GirisViewModel x:Key="GirisVM"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Image Source="facebook.png" Margin="0,40,0,0" ></Image>
-            <Entry Placeholder="EPOSTA ADRESİ" Margin="10,40,10,0"></Entry>
-            <Entry Placeholder="ŞİFRE" Margin="10,0,10,0" IsPassword="true"></Entry>
-            <Label Text="Şifremi Unuttum" TextDecorations="Underline" FontAttributes="Bold" FontSize="Medium" Margin="240,0,0,0"></Label>
-            <Button Text="GİRİŞ YAP" Margin="10,40,10,10" BackgroundColor="Black" FontSize="Large"></Button>
-            <Label Text="veya" FontAttributes="Bold" FontSize="Medium" Margin="180,50,50,50"></Label>
-            <Label Text="Üye değil misiniz?" FontAttributes="Bold" FontSize="Medium" Margin="130,0,0,20"></Label>
-            <Button Text="KAYIT OL" TextColor="Black" Margin="10,0,10,200" BackgroundColor="White" BorderWidth="1" BorderColor="Black" FontSize="Large"></Button>
-        </StackLayout>
+        <Grid BindingContext="{StaticResource GirisVM}">
+
+            <StackLayout x:Name="Loginstack" IsVisible="True">
+            <Image Source="koton_logo.png" Margin="0,-60,0,0"  ></Image>
+                <Label Text="Kullanıcı adı veya email" TextColor="Black" Margin="10,-60,10,20"/>
+                <Entry TextColor="Black"  Margin="10,-20,10,0" Placeholder="Email veya username" PlaceholderColor="Gray" Text="{Binding Email, Mode=TwoWay}"></Entry>
+                <Label Text="Şifre" TextColor="Black" Margin="10,10,10,20"/>
+                <Entry TextColor="Black"  Margin="10,-20,10,0" Placeholder="Şifre" PlaceholderColor="Gray" Text="{Binding Email, Mode=TwoWay}"></Entry>
+                <Button  VerticalOptions="Center" BackgroundColor="Black" Margin="10,0,10,0" Text="Giriş" Command="{Binding LoginCommand}" CommandParameter="{Binding CanLogin}" />
+                <Label Text="Kayıt Ol" TextColor="Black" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Kayit_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+            <StackLayout x:Name="Registerstack" IsVisible="false" VerticalOptions="Center">
+                <Label Text="KAYIT OL" FontSize="50" HorizontalOptions="Center" Margin="0,0,0,50"/>
+                <Frame HeightRequest="10"  BackgroundColor="White">
+                    <Entry TextColor="Black" Margin="10,-17" Placeholder="İsim" PlaceholderColor="Gray"  Text="{Binding Name, Mode=TwoWay}"/>
+                </Frame>
+                <Frame HeightRequest="10"  BackgroundColor="White">
+                    <Entry TextColor="Black" Margin="10, -17" Placeholder="Email" PlaceholderColor="Gray"   Text="{Binding Email, Mode=TwoWay}"/>
+                </Frame>
+                <Frame HeightRequest="10"  BackgroundColor="White">
+                    <Entry TextColor="Black" Margin="10, -17" Placeholder="Şifre" PlaceholderColor="Gray"  IsPassword="True" Text="{Binding Password, Mode=TwoWay}"/>
+                </Frame>
+                <Frame HeightRequest="10" BackgroundColor="White">
+                    <Entry TextColor="Black" Margin="10, -17" Placeholder="Tekrar Şifre" PlaceholderColor="Gray"  IsPassword="True" Text="{Binding ConfirmPassword, Mode=TwoWay}" />
+                </Frame>
+                <Button  VerticalOptions="Center" Text="Kayıt Ol" Margin="10,0,10,0" BackgroundColor="Black" Command="{Binding RegisterCommand}" CommandParameter="{Binding CanRegister}" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Zaten Hesabınız var ise" TextColor="Black"/>
+                    <Label Text="Giriş" TextColor="Black">
+                        <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Giris_Tapped"/>
+                    </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

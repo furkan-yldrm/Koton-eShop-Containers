@@ -16,5 +16,17 @@ namespace eShopOnContainers.Core.Views
         {
             InitializeComponent();
         }
+
+        private void Kayit_Tapped(object sender, EventArgs e)
+        {
+            Registerstack.IsVisible = true;
+            Loginstack.IsVisible = false;
+        }
+
+        private void Giris_Tapped(object sender, EventArgs e)
+        {
+            Registerstack.IsVisible = false;
+            Loginstack.IsVisible = true;
+        }
     }
 }

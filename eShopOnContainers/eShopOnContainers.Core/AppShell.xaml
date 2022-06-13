@@ -27,7 +27,7 @@
     </Shell.BackButtonBehavior>
 
     <FlyoutItem >
-        <ShellContent ContentTemplate="{DataTemplate views:LoginView}" Route="Login" />
+        <ShellContent ContentTemplate="{DataTemplate views:Login}" Route="Login" />
     </FlyoutItem>
 
     <TabBar Route="Main">
