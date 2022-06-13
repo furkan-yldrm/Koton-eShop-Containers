@@ -1,8 +1,8 @@
-﻿using eShopOnContainers.Core.Services.Dependency;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace eShopOnContainers.Core.ViewModels.Helpers
 {

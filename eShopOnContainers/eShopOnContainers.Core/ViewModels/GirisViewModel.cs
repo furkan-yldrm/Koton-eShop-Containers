@@ -9,7 +9,16 @@ using Xamarin.Forms;
 namespace eShopOnContainers.Core.ViewModels
 {
     public class GirisViewModel : INotifyPropertyChanged
-    {
+    { public event PropertyChangedEventHandler PropertyChanged;
+        public ICommand LoginCommand { get; set; }
+        public ICommand RegisterCommand { get; set; }
+
+        
+        public GirisViewModel()
+        {
+            LoginCommand = new Command(Login, LoginCanExecute);
+            RegisterCommand = new Command(Register, RegisterCanExecute);
+        }
 
         private string name;
         public string Name
@@ -86,17 +95,7 @@ namespace eShopOnContainers.Core.ViewModels
                 return !string.IsNullOrEmpty(Email) && !string.IsNullOrEmpty(Password) && !string.IsNullOrEmpty(ConfirmPassword) && !string.IsNullOrEmpty(Name);
             }
         }
-
-        public ICommand LoginCommand { get; set; }
-        public ICommand RegisterCommand { get; set; }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public LoginVM()
-        {
-            LoginCommand = new Command(Login, LoginCanExecute);
-            RegisterCommand = new Command(Register, RegisterCanExecute);
-        }
-
+       
         private bool RegisterCanExecute(object parameter)
         {
             return CanRegister;
@@ -106,7 +105,7 @@ namespace eShopOnContainers.Core.ViewModels
         {
             if (confirmPassword != password)
             {
-                App.Current.MainPage.DisplayAlert("Error", "aynı şifre değil", "Ok");
+                App.Current.MainPage.DisplayAlert("Error", "ŞİFRE YANLIŞ!!", "Tamam");
             }
             else
             {

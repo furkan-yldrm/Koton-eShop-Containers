@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using eShopOnContainers.Core.Services.Settings;
 using eShopOnContainers.Core.ViewModels.Base;
+using eShopOnContainers.Core.ViewModels.Helpers;
 using eShopOnContainers.Core.Views;
 using Xamarin.Forms;
 

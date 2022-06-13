@@ -3,6 +3,7 @@ using eShopOnContainers.Core.Services.Location;
 using eShopOnContainers.Core.Services.Settings;
 using eShopOnContainers.Core.Services.Theme;
 using eShopOnContainers.Core.ViewModels.Base;
+using eShopOnContainers.Core.Views;
 using eShopOnContainers.Services;
 using System;
 using System.Diagnostics;
@@ -24,7 +25,7 @@ namespace eShopOnContainers
 
             InitApp();
 
-            MainPage = new AppShell ();
+            MainPage = new CatalogView ();
         }
 
         private void InitApp()

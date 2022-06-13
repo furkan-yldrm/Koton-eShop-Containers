@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "100887511053",
-    "project_id": "xamarin-firestore-98b56",
-    "storage_bucket": "xamarin-firestore-98b56.appspot.com"
+    "project_number": "323711915709",
+    "project_id": "xamarin-eshop",
+    "storage_bucket": "xamarin-eshop.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:100887511053:android:9b311cd03bf4264aed9544",
+        "mobilesdk_app_id": "1:323711915709:android:9856161c855fc8e6f449d4",
         "android_client_info": {
           "package_name": "com.lalorosas.eShopOnContainers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "100887511053-2tf7llh06feerjd2esn9vb3gd6hs3us4.apps.googleusercontent.com",
+          "client_id": "323711915709-bqnfstndgfca7np2pn109r8trv4tsc58.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC2N4slH5SkyO4Jk3FiH8_la6TfFm-Ei2E"
+          "current_key": "AIzaSyB_N1UaIgpUfCUIs1CWQkdOmeEXHWx_bk0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "100887511053-2tf7llh06feerjd2esn9vb3gd6hs3us4.apps.googleusercontent.com",
+              "client_id": "323711915709-bqnfstndgfca7np2pn109r8trv4tsc58.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
