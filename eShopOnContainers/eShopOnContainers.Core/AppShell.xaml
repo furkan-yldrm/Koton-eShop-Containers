@@ -27,13 +27,13 @@
     </Shell.BackButtonBehavior>
 
     <FlyoutItem >
-        <ShellContent ContentTemplate="{DataTemplate views:Login}" Route="Login" />
+        <ShellContent ContentTemplate="{DataTemplate views:LoginView}" Route="Login" />
     </FlyoutItem>
 
     <TabBar Route="Main">
         <ShellContent Title="ANASAYFA" Route="HomePage" Icon="home.png" ContentTemplate="{DataTemplate views:HomePage}"/>
         <ShellContent Title="CATALOG" Route="Catalog" Icon="{StaticResource CatalogIconImageSource}" ContentTemplate="{DataTemplate views:CatalogView}" />
-        <ShellContent Title="FAVORILER" Route="Favorites" Icon="heart.png" ContentTemplate="{DataTemplate views:Favorites}" />
+        <ShellContent Title="FAVORILER" Route="UrunEkle" Icon="heart.png" ContentTemplate="{DataTemplate views:UrunEkle}" />
         <ShellContent Title="Profil" Route="Profile" Icon="{StaticResource ProfileIconImageSource}" ContentTemplate="{DataTemplate views:ProfileView}" />
     </TabBar>
 </Shell>

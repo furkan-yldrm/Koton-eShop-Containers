@@ -25,7 +25,7 @@ namespace eShopOnContainers
 
             InitApp();
 
-            MainPage = new CatalogView ();
+            MainPage = new AppShell();
         }
 
         private void InitApp()

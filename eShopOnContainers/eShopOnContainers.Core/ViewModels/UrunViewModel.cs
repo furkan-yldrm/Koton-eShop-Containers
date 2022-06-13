@@ -13,7 +13,7 @@ using XamFirebase.Models;
 
 namespace XamFirebase.ViewModels
 {
-    public class VMProducts : INotifyPropertyChanged
+    public class UrunViewModel : INotifyPropertyChanged
     {
         FirebaseClient fClient;
 
@@ -97,7 +97,7 @@ namespace XamFirebase.ViewModels
         }
 
         readonly string productResource = "Products";
-        public VMProducts()
+        public UrunViewModel()
         {
             try
             {
