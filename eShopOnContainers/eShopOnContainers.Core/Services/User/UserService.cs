@@ -3,18 +3,24 @@ using eShopOnContainers.Core.Models.User;
 using eShopOnContainers.Core.Services.RequestProvider;
 using System;
 using System.Threading.Tasks;
+using Firebase.Database;
 
 namespace eShopOnContainers.Core.Services.User
 {
     public class UserService : IUserService
     {
         private readonly IRequestProvider _requestProvider;
+        readonly FirebaseClient _client;    
 
-        public UserService(IRequestProvider requestProvider)
+        public UserService()
         {
-            _requestProvider = requestProvider;
+            _client = new FirebaseClient("https://realtimedb-eshop-default-rtdb.firebaseio.com");
         }
 
+        public async Task<bool> IsUserExists(string uname)
+        {
+
+        }
         public Task<double> GetCurrentPayRateAsync()
         {
             throw new NotImplementedException();
