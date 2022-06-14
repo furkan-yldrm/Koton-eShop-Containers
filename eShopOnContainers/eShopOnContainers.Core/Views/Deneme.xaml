@@ -4,14 +4,14 @@
              x:Class="eShopOnContainers.Core.Views.Deneme">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="koton_logo.png"/>
+            <Image Source="koton_logo.png" Margin="0,-90,0,0"/>
 
             <Label
                 Text="Hesabını Oluştur"
                 HorizontalOptions="Center"
                 TextColor="Black"
                 FontSize="25"
-                Margin="0 , 20"/>
+                Margin="0,-90,0,0"/>
             <Entry
                 Placeholder="E-mail"
                 Keyboard="Email"

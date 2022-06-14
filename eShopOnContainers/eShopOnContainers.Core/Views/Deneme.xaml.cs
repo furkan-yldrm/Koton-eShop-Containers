@@ -29,7 +29,7 @@ namespace eShopOnContainers.Core.Views
                     var signOut = auth.SignOut();
                     if (signOut)
                     {
-                        Application.Current.MainPage = new LoginView();
+                        Application.Current.MainPage = new AppShell();
                     }
                 }
                 else
