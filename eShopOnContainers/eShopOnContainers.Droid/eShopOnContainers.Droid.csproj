@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="AuthDroid.cs" />
     <Compile Include="Effects\EntryLineColorEffect.cs" />
     <Compile Include="Extensions\ViewExtensions.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -99,7 +100,7 @@
     <Compile Include="Services\ThemeService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="google-services .json" />
+    <GoogleServicesJson Include="google-services .json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\drawable-xxhdpi\switch_off.png" />

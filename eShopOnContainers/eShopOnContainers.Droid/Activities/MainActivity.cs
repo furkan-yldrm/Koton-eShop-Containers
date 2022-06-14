@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using System;
 using Xamarin.Forms.Platform.Android;
+using Firebase;
 
 namespace eShopOnContainers.Droid.Activities
 {
@@ -23,6 +24,7 @@ namespace eShopOnContainers.Droid.Activities
 
             base.OnCreate(bundle);
 
+            FirebaseApp.InitializeApp(Application.Context);
             Xamarin.Essentials.Platform.Init (this, bundle);
 
             SupportActionBar.SetDisplayShowHomeEnabled(true); // Show or hide the default home button

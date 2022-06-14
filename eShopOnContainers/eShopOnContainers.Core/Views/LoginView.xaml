@@ -127,6 +127,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="60" />
             </Grid.RowDefinitions>
+            
             <!-- LOGIN / REGISTER / SETTINGS -->
             <Grid   
                 Grid.Row="0"
@@ -171,16 +172,15 @@
                 </StackLayout>
             </Grid>
             <!-- INFO -->
-            <Label
-              Grid.Row="1"
-              Text="ARE YOU REGISTERED?"
-              Style="{StaticResource TitleLabelStyle}"/>
+            <Button Text="KAYIT OL" TextColor="White"
+                  BackgroundColor="{StaticResource BlackColor}"
+                        Clicked="Button_Clicked_1"/>
             <!-- LOGIN FORM -->
             <StackLayout   
                 Grid.Row="3"
                 Margin="24">
                 <Label
-                  Text="Kullanıcı adı"
+                  Text="E-mail adresi"
                     TextColor="Black"
                   Style="{StaticResource HeaderLabelStyle}" />
                 <Entry Text="{Binding UserName.Value, Mode=TwoWay}">
@@ -243,6 +243,7 @@
                    Grid.Row="2" >
                 <Image
                     Source="koton_logo.png"
+                    Margin="20,-80,0,0"
                     Aspect="AspectFit" />
             </Frame>
             <!-- LOGIN BUTTON -->
@@ -255,6 +256,7 @@
                 <Label
                   Text="GİRİŞ YAP"
                   Style="{StaticResource LoginButtonStyle}"/>
+                
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer
                         Command="{Binding MockSignInCommand}"
