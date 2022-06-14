@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="eShopOnContainers.Core.Views.UrunEkle"
              Visual="Material"
+             Title="ÜRÜN EKLE"
              NavigationPage.HasNavigationBar="True"
              BackgroundColor="White">
     <ContentPage.Content>
@@ -13,13 +14,13 @@
                 <RowDefinition Height="6*"/>
             </Grid.RowDefinitions>
             <StackLayout Orientation="Vertical" Grid.Row="0" Padding="5" Spacing="5">
-                <Entry x:Name="txtProductName" Placeholder="Enter Product Name" Text="{Binding product.productName}"
+                <Entry x:Name="txtProductName" Placeholder="Ürün ismi" PlaceholderColor="Gray" Text="{Binding product.productName}"
 HorizontalOptions="FillAndExpand"/>
-                <Entry x:Name="txtPrice" Placeholder="Enter Product Price" Text="{Binding product.productPrice}"
+                <Entry x:Name="txtPrice" Placeholder="Ürün Fiyatı" PlaceholderColor="Gray" Text="{Binding product.productPrice}"
 HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
 
-                <Button x:Name="btnSave" Text="{Binding btnSaveText}"
-Command="{Binding btnSaveProduct}" IsVisible="{Binding showButton}"/>
+                <Button x:Name="btnSave" Text="KAYDET"
+Command="{Binding btnSaveProduct}" IsVisible="{Binding showButton}" BackgroundColor="Black"/>
 
                 <ActivityIndicator x:Name="activityIndicator1" IsVisible="{Binding isBusy}"
 IsRunning="{Binding isBusy}"/>
@@ -33,7 +34,7 @@ BackgroundColor="#c9c9c9">
 
                     <Label Text="Name" WidthRequest="300" TextColor="#000" FontAttributes="Bold"
 VerticalOptions="Start"/>
-                    <Label Text="Price" WidthRequest="100" TextColor="#fc0339" FontAttributes="Bold"
+                    <Label Text="Price" WidthRequest="100" TextColor="Blue" FontAttributes="Bold"
 VerticalOptions="Start"/>
                 </StackLayout>
 
@@ -47,7 +48,7 @@ CachingStrategy="RecycleElement" ItemSelected="lstProducts_ItemSelected">
 VerticalOptions="Start" Padding="5" BackgroundColor="#fff">
                                     <Label Text="{Binding productName}" WidthRequest="300" TextColor="#000"
 FontAttributes="Bold" VerticalOptions="Start"/>
-                                    <Label Text="{Binding productPrice}" WidthRequest="100" TextColor="#fc0339"
+                                    <Label Text="{Binding productPrice}" WidthRequest="100" TextColor="Blue"
 FontAttributes="Bold" VerticalOptions="Start"/>
                                 </StackLayout>
                             </ViewCell>

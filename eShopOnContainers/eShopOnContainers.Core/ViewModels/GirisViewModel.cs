@@ -105,13 +105,13 @@ namespace eShopOnContainers.Core.ViewModels
         {
             if (confirmPassword != password)
             {
-                App.Current.MainPage.DisplayAlert("Error", "ŞİFRE YANLIŞ!!", "Tamam");
+                await App.Current.MainPage.DisplayAlert("Error", "ŞİFRE YANLIŞ!!", "Tamam");
             }
             else
             {
                 bool result = await Auth.RegisterUser(Name, Email, Password);
                 if (result)
-                    App.Current.MainPage.Navigation.PopAsync();
+                  await  App.Current.MainPage.Navigation.PopAsync();
             }
 
         }
@@ -120,7 +120,7 @@ namespace eShopOnContainers.Core.ViewModels
         {
             bool result = await Auth.AuthenticateUser(Email, Password);
             if (result)
-                App.Current.MainPage.Navigation.PopAsync();
+              await  App.Current.MainPage.Navigation.PopAsync();
         }
 
         private bool LoginCanExecute(object parameter)
