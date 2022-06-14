@@ -66,6 +66,9 @@
     <PackageReference Include="Xamarin.Firebase.Common">
       <Version>120.0.0.3</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Core">
+      <Version>117.4.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Firestore">
       <Version>123.0.3.3</Version>
     </PackageReference>
@@ -96,7 +99,7 @@
     <Compile Include="Services\ThemeService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <GoogleServicesJson Include="google-services .json" />
+    <None Include="google-services .json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\drawable-xxhdpi\switch_off.png" />

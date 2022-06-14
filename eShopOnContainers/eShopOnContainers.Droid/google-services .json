@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "323711915709",
-    "project_id": "xamarin-eshop",
-    "storage_bucket": "xamarin-eshop.appspot.com"
+    "project_number": "1038324868019",
+    "firebase_url": "https://realtimedb-eshop-default-rtdb.firebaseio.com",
+    "project_id": "realtimedb-eshop",
+    "storage_bucket": "realtimedb-eshop.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:323711915709:android:9856161c855fc8e6f449d4",
+        "mobilesdk_app_id": "1:1038324868019:android:398831b9fd78a62d58e1c6",
         "android_client_info": {
-          "package_name": "com.lalorosas.eShopOnContainers"
+          "package_name": "com.furkan.eShopOnContainers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "323711915709-bqnfstndgfca7np2pn109r8trv4tsc58.apps.googleusercontent.com",
+          "client_id": "1038324868019-2a2ok29sqlfacke45uv21gnv7rusi4sa.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB_N1UaIgpUfCUIs1CWQkdOmeEXHWx_bk0"
+          "current_key": "AIzaSyCYKSstmCFvpWe7qNTOi58Jcq5yyw6mZmM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "323711915709-bqnfstndgfca7np2pn109r8trv4tsc58.apps.googleusercontent.com",
+              "client_id": "1038324868019-2a2ok29sqlfacke45uv21gnv7rusi4sa.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
