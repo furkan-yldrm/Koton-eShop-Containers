@@ -30,11 +30,11 @@ IsRunning="{Binding isBusy}"/>
 
             <StackLayout Orientation="Vertical" Grid.Row="1" VerticalOptions="FillAndExpand">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="5"
-BackgroundColor="#c9c9c9">
+BackgroundColor="White">
 
-                    <Label Text="Name" WidthRequest="300" TextColor="#000" FontAttributes="Bold"
+                    <Label Text="İsim" WidthRequest="300" TextColor="Blue" FontAttributes="Bold"
 VerticalOptions="Start"/>
-                    <Label Text="Price" WidthRequest="100" TextColor="Blue" FontAttributes="Bold"
+                    <Label Text="Fiyat" WidthRequest="100" TextColor="Blue" FontAttributes="Bold"
 VerticalOptions="Start"/>
                 </StackLayout>
 

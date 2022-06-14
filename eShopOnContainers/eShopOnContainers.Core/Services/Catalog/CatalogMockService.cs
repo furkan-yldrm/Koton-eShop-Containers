@@ -24,11 +24,11 @@ namespace eShopOnContainers.Core.Services.Catalog
 
         private ObservableCollection<CatalogItem> MockCatalog = new ObservableCollection<CatalogItem>
         {
-            new CatalogItem { Id = Common.Common.MockCatalogItemId01, PictureUri = "fake_product_01.png", Name = ".NET Bot Blue Sweatshirt (M)", Price = 19.50M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 2, CatalogType = "T-Shirt" },
-            new CatalogItem { Id = Common.Common.MockCatalogItemId02, PictureUri = "fake_product_02.png", Name = ".NET Bot Purple Sweatshirt (M)", Price = 19.50M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 2, CatalogType = "T-Shirt" },
-            new CatalogItem { Id = Common.Common.MockCatalogItemId03, PictureUri = "fake_product_03.png", Name = ".NET Bot Black Sweatshirt (M)", Price = 19.95M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 2, CatalogType = "T-Shirt" },
-            new CatalogItem { Id = Common.Common.MockCatalogItemId04, PictureUri = "fake_product_04.png", Name = ".NET Black Cupt", Price = 17.00M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 1, CatalogType = "Mug" },
-            new CatalogItem { Id = Common.Common.MockCatalogItemId05, PictureUri = "fake_product_05.png", Name = "Azure Black Sweatshirt (M)", Price = 19.50M, CatalogBrandId = 1, CatalogBrand = "Azure", CatalogTypeId = 2, CatalogType = "T-Shirt" }
+            new CatalogItem { Id = Common.Common.MockCatalogItemId01, PictureUri = "oversize1.png", Name = "Oversize", Price = 119.50M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 2, CatalogType = "T-Shirt" },
+            new CatalogItem { Id = Common.Common.MockCatalogItemId02, PictureUri = "oversize2.png", Name = "Oversize2", Price = 49.50M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 2, CatalogType = "T-Shirt" },
+            new CatalogItem { Id = Common.Common.MockCatalogItemId03, PictureUri = "oversize3.png", Name = "Oversize3", Price = 99.95M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 2, CatalogType = "T-Shirt" },
+            new CatalogItem { Id = Common.Common.MockCatalogItemId04, PictureUri = "basictshirt.png", Name = "BasicTshirt", Price = 170.00M, CatalogBrandId = 2, CatalogBrand = "Visual Studio", CatalogTypeId = 2, CatalogType = "Tshirt" },
+            
         };
 
         public async Task<ObservableCollection<CatalogItem>> GetCatalogAsync()
