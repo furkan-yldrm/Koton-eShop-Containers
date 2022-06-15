@@ -155,7 +155,7 @@ namespace XamFirebase.ViewModels
 
                         await fClient.Child(productResource).PostAsync(JsonConvert.SerializeObject(products));
                         await GetAllProducts();
-                        lblMessage = "Product saved successfully";
+                        lblMessage = "Ürün kaydedildi.";
                     }
                     else if (btnSaveText == "UPDATE" && action.Equals("ADD"))
                     {
